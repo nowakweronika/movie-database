@@ -1,0 +1,20 @@
+# Gradle files
+.gradle
+/build
+# Intellij files
+*.iml
+.idea
+# Generated files
+bin/
+gen/
+out/
+generated/
+# Version control
+vcs.xml
+
+.DS_Store
+/captures
+/local.properties
+.externalNativeBuild
+.cxx
+local.properties
