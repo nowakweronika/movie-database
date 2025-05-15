@@ -3,7 +3,16 @@ agp = "8.8.2"
 kotlin = "2.1.10"
 coreKtx = "1.16.0"
 appcompat = "1.7.0"
+coil-compose = "2.6.0"
 composeBom = "2025.05.00"
+coroutine-test = "1.10.2"
+hilt = "2.56.2"
+hilt-nav = "1.2.0"
+junit = "4.13.2"
+ksp = "2.1.20-2.0.1"
+mockk = "1.13.8"
+okhttp = "4.12.0"
+retrofit = "2.11.0"
 tvFoundation = "1.0.0-alpha12"
 tvMaterial = "1.0.0"
 lifecycleRuntimeKtx = "2.9.0"
@@ -13,6 +22,7 @@ activityCompose = "1.10.1"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-hilt = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-nav" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
@@ -23,9 +33,19 @@ androidx-tv-foundation = { group = "androidx.tv", name = "tv-foundation", versio
 androidx-tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "tvMaterial" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutine-test" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
